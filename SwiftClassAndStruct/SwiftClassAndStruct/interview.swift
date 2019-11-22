@@ -58,4 +58,16 @@ enum Password {
     case other
 }
 
-// 5. 手写一个方法前缀，比如：xx.BD.instert.....
+
+// 5. 枚举在switch种内部是怎么判断条件的？
+
+
+// 6. 手写一个方法前缀，比如：xx.BD.instert.....
+
+/**
+ 
+ 6.1 建立一个base，
+ 6.2 建立一个协议
+ 6.3 实现遵守base的协议类
+ 
+ */
