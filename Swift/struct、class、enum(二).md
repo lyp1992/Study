@@ -2,10 +2,10 @@
 
 ### 1. 初始化器的差别
 > 结构体可以自动生成可以为属性传值的初始化器
-![struct](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/屏幕快照 2019-11-22 上午10.11.23.png)   
+![struct](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/Struct、class、enum（二）/结构体初始化器.png)   
 
 class 如果不给他赋初始值，系统会报 *class xxx has no initializers*  
-![class](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/屏幕快照 2019-11-22 上午10.12.39.png)
+![class](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/Struct、class、enum（二）/类初始化器.png)
 
 > 结构体内只有变量占据内存。类除了变量占据内存，还给指向对象类型信息，和引用计算分配了内存 
 
@@ -57,7 +57,7 @@ class 如果不给他赋初始值，系统会报 *class xxx has no initializers*
     print("size所指向内存的内容",Mems.memStr(ofRef: size))
 
 在控制台上打印出来：
-![](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/屏幕快照 2019-11-22 上午10.35.47.png)
+![](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/Struct、class、enum（二）/size的内存结构.png)
 通过控制台，我们看到一个size，
 > 1. 占用了32个字节，前16个字节分别指向的类型信息，引用计数。后8个字节才是实际为变量分配的内存。
 > 2. class 创建出来系统分配的是堆空间。
@@ -97,15 +97,15 @@ class 如果不给他赋初始值，系统会报 *class xxx has no initializers*
 
 我总感觉他这个工具是有点问题的，所以我通过汇编找到了size的真正地址应该是 0x00007ffeefbff410。其实就是相差16个字节。正好符合point的内存大小。下面我简述一下操作过程
 > 1. 断点打在 point（）这行
-![](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/屏幕快照 2019-11-22 上午11.18.47.png)
+![](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/Struct、class、enum（二）/point断点处.png)
 
 > 2. 打开xcode的工具
-![](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/屏幕快照 2019-11-22 上午11.23.59.png)
+![](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/Struct、class、enum（二）/xcode工具使用.png)
 
 > 3. 来到point.init() 方法,同时记住下面那两行连续的%rbp内存空间
-![](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/屏幕快照 2019-11-22 上午11.20.07.png)
+![](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/Struct、class、enum（二）/point 创建.png)
 > 4. 在控制台上输入指令 si，表示进入point.init() 内部。 在这里可以清晰的看见，系统开辟了一段连续的%rbp内存空间，并分别将$0X3 ,$0X4 放到了rbp中
-![](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/屏幕快照 2019-11-22 上午11.11.47.png)
+![](/Users/laiyongpeng/Desktop/技术分享文档/Study/Swift/Struct、class、enum（二）/point 内存地址返回.png)
 
 > 5. 然后直接在控制台上敲si，知道retq，或者直接敲finish
 > 6. 然后断点回来到 第3步的第二行； 
