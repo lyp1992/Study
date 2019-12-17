@@ -9,3 +9,4 @@
 - 6.[方法](https://github.com/lyp1992/Study/blob/master/Swift/%E6%96%B9%E6%B3%95.md)
 - 7.[下标](https://github.com/lyp1992/Study/blob/master/Swift/%E4%B8%8B%E6%A0%87.md)
 - 8.[继承](https://github.com/lyp1992/Study/blob/master/Swift/%E7%BB%A7%E6%89%BF.md)
+- 9.[初始化](https://github.com/lyp1992/Study/blob/master/Swift/%E5%88%9D%E5%A7%8B%E5%8C%96.md)
