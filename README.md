@@ -21,3 +21,5 @@
 
 - 10.[协议](https://github.com/lyp1992/Study/blob/master/Swift/%E5%8D%8F%E8%AE%AE.md)  
 
+- 11.[错误处理](https://github.com/lyp1992/Study/blob/master/Swift/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86.md)  
+
