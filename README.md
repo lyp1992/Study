@@ -23,3 +23,4 @@
 
 - 11.[错误处理](https://github.com/lyp1992/Study/blob/master/Swift/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86.md)  
 
+- 12.[泛型](https://github.com/lyp1992/Study/blob/master/Swift/%E6%B3%9B%E5%9E%8B%20%20.md)
