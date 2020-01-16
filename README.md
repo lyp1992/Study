@@ -28,3 +28,5 @@
 - 13.[高级运算符](https://github.com/lyp1992/Study/blob/master/Swift/%E9%AB%98%E7%BA%A7%E8%BF%90%E7%AE%97%E7%AC%A6%20%20.md)
 
 - 14.[扩展](https://github.com/lyp1992/Study/blob/master/Swift/%E6%89%A9%E5%B1%95%20%20.md)
+
+- 15.[访问控制](https://github.com/lyp1992/Study/blob/master/Swift/%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%20%20.md)
