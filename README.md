@@ -30,3 +30,5 @@
 - 14.[扩展](https://github.com/lyp1992/Study/blob/master/Swift/%E6%89%A9%E5%B1%95%20%20.md)
 
 - 15.[访问控制](https://github.com/lyp1992/Study/blob/master/Swift/%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%20%20.md)
+
+- 16.[内存管理](https://github.com/lyp1992/Study/blob/master/Swift/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%20%20.md)
